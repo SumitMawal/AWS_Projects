@@ -4,20 +4,21 @@
 
 - ### What is amazon S3
 
-  Amazon S3, or Simple Storage Service, is an object storage solution by Amazon. It’s versatile, scalable, and secure, allowing users to    store and retrieve data for various purposes, such as data lakes, websites, mobile apps, backup, and more.
+	Amazon S3, or Simple Storage Service, is an object storage solution by Amazon. It’s 			versatile, scalable, and secure, allowing users to    store and retrieve data for 				various purposes, such as data lakes, websites, mobile apps, backup, and more.
 
 - ### How I used Amazon S3 in this project
 
   In this project, I utilized Amazon S3 to host the static website.
+  
    ![image](https://github.com/user-attachments/assets/fd1d1410-eea7-47a9-a5cb-8b5426655b9d)
 
 - ### How I Set Up an S3 Bucket:
 
   Creating an S3 bucket took me less than 5 minute
 
-  The region I picked for my S3 bucket was Asia Pacific (Mumbai) ap-south-1 because I am leaving in Maharashtra, India which is in Asia     Pacific region and also I want to host this site specifically for user from Asia Pacific region.
+  The region I picked for my S3 bucket was Asia Pacific (Mumbai) ap-south-1 because I am 		leaving in Maharashtra, India which is in Asia     Pacific region and also I want to 			host this site specifically for user from Asia Pacific region.
 
-  An S3 bucket names are globally unique, and all AWS accounts share the namespace. After you create a bucket, no other AWS account in      the entire world can use your bucket's name unless you delete the bucket.
+  An S3 bucket names are globally unique, and all AWS accounts share the namespace. After 	you create a bucket, no other AWS account in      the entire world can use your 					bucket's name unless you delete the bucket.
 
    ![image](https://github.com/user-attachments/assets/61256f14-578d-4f38-852b-a53b38bc2f64)
 
@@ -29,7 +30,7 @@
     1.	Index.html 
     2.	Web-Site-Data-Folder
      
-  Both files are necessary for this project as Index.html - To create and design web pages. Web-Site-Data-Folder - This folder having all   files related to website like images, text, etc.
+  Both files are necessary for this project as Index.html - To create and design web 				pages. Web-Site-Data-Folder - This folder having all   files related to website like 			images, text, etc.
  
    ![image](https://github.com/user-attachments/assets/234200de-7157-46c4-ac89-691c47726eaa)
 
@@ -37,7 +38,11 @@
 
 Website hosting that makes your website public on the internet. Storing your HTML file (and the other files for your website) on a web server, so it's accessible online.
 
-To enable website hosting with my S3 bucket, I configured the following settings: Bucket (Created by me)>Properties>Static website hosting>Edit Static web hosting: Enable Hosting type: Host a static website Index document: index.html
+To enable website hosting with my S3 bucket, I configured the following settings: 
+**Bucket(Created by me) > Properties > Static website hosting**
+- **Edit Static web hosting:** Enable 
+- **Hosting type:** Host a static website 
+- **Index document:** index.html
 
 ## Access Control Lists (ACL):
 
