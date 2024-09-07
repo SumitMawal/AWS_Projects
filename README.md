@@ -1,5 +1,18 @@
 # AWS_Projects
 
+- ## Launching VPC Resources
+
+  In this project, I focused on establishing a secure and efficient network infrastructure using Amazon Web Services (AWS). The key tasks included:
+
+  - **Create Private/Public Subnets** 🚷: Set up both private and public subnets to segregate resources based on their accessibility requirements.
+  - **Configure Private/Public Route Tables** 🚧: Managed traffic routing within the respective subnets by configuring route tables.
+  - **Implement Private/Public Network ACLs** 🚔: Enhanced security by controlling inbound and outbound traffic through Network Access Control Lists (ACLs).
+  - **Launch EC2 Instances in Public Subnet** 💻: Deployed EC2 instances in the public subnet to facilitate internet communication.
+  - **Launch EC2 Instances in Private Subnet** 🤐: Deployed EC2 instances in the private subnet to ensure secure and isolated operations.
+  - **Utilize AWS VPC Wizard** ⚡️: Leveraged the AWS VPC wizard for rapid and efficient VPC creation.
+
+  This project reinforced my understanding of AWS networking services and highlighted the importance of meticulous planning and execution in creating a secure and efficient network environment.
+
 - ## VPC - Traffic Flow and Security
   In this project, I focused on designing and securing a Virtual Private Cloud (VPC) on AWS. The key tasks accomplished include:
   
