@@ -117,10 +117,10 @@ This project not only reinforced my understanding of AWS networking services but
  
   ![image](https://github.com/user-attachments/assets/7a694d21-3356-4d09-85db-9fd8192519d1)
 
-  > [!NOTE]
-  > My new VPC has a CIDR block of 10.0.0.0/16. It can have the same IPv4 CIDR block as my existing VPC because AWS VPCs are isolated by default. There won’t be IP conflicts unless you connect them using VPC peering.
-  
-  ![image](https://github.com/user-attachments/assets/701e728a-cbfb-4ae9-8993-a25f69744303)
+> [!NOTE]
+> My new VPC has a CIDR block of 10.0.0.0/16. It can have the same IPv4 CIDR block as my existing VPC because AWS VPCs are isolated by default. There won’t be IP conflicts unless you connect them using VPC peering.
+>  
+> ![image](https://github.com/user-attachments/assets/701e728a-cbfb-4ae9-8993-a25f69744303)
 
 - **Tenancy:**
   
@@ -153,11 +153,14 @@ This project not only reinforced my understanding of AWS networking services but
 
   The dollar ($) sign suggests, NAT gateways cost money!
 
-  > [!IMPORTANT]
-  > Why not Internet Gateway instead of NAT Gateways?
-  > Internet gateways let instances in public subnets communicate with the internet both ways i.e. both inbound and outbound traffic.
-  > Assigning public IP addresses to your instances makes them accessible from the internet, increasing the attack surface. Even with strict security group rules, there's always a risk of misconfiguration or vulnerabilities being exploited. Private subnets are meant to keep your instances isolated from the public internet, so using public IP addresses for instances in private subnets would not be ideal.
-  > That's where NAT gateways come in! Instances in private subnets using a NAT gateway do not need public IP addresses. The NAT gateway handles a translation to a public IP, keeping your instances' private IPs hidden.
+> [!IMPORTANT]
+> **Why not Internet Gateway instead of NAT Gateways?**
+> 
+> Internet gateways let instances in public subnets communicate with the internet both ways i.e. both inbound and outbound traffic.
+> 
+> Assigning public IP addresses to your instances makes them accessible from the internet, increasing the attack surface. Even with strict security group rules, there's always a risk of misconfiguration or vulnerabilities being exploited. Private subnets are meant to keep your instances isolated from the public internet, so using public IP addresses for instances in private subnets would not be ideal.
+>
+> That's where NAT gateways come in! Instances in private subnets using a NAT gateway do not need public IP addresses. The NAT gateway handles a translation to a public IP, keeping your instances' private IPs hidden.
  
 - **VPC endpoints:**
 
